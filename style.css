@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    max-width: 1140px;
+    height: 100vh;
+    margin: 0 auto;
+    background: radial-gradient(rgb(170, 202, 255), #3282FF 60%);
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+table {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+thead {
+    color: #3A5071;
+    font-size: 14px;
+}
+
+tbody {
+    color: #577198;
+    font-size: 16px;
+}
+
+th {
+    background-color: #E5EEFB;
+}
+
+tr:nth-child(even) {
+    background-color: #F1F6FC;
+}
+
+th, td {
+    height: 56px;
+    border-right: 1px solid #DAE0E9;
+}
+
+th:last-of-type, td:last-of-type {
+    border-right: 0;
+}
+
+td:nth-child(odd),
+th:nth-child(odd){
+  font-weight: bold;
+}
+
+td:nth-child(5) {
+    text-transform: lowercase;
+}
+
+.fas {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 10px;
+    color: #929FB7;
+}
+
+.ascending .fa-sort,
+.descending .fa-sort {
+    display: none;
+}
+
+.disabled {
+    pointer-events: none;
+    color: #5A709C;
+}
+
+.paginate.disabled {
+    color: #5A709C;
+}
+
+.fa-sort-down {
+    display: none;
+}
+
+.descending .fa-sort-down {
+    display: inline-block;
+    color: #577198;
+}
+
+.fa-sort-up {
+    display: none;
+}
+
+.ascending .fa-sort-up {
+    display: inline-block;
+    color: #577198;
+}
+
+.pagi-btns a {
+    color: #5A709C;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.pagi-btns a:link {
+    color: #fff;
+}
+
+.pagi-btns a:visited {
+    color: #fff;
+}
+
+footer {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+footer img {
+    height: 22px;
+}
