@@ -10,7 +10,7 @@ body {
     max-width: 1140px;
     height: 100vh;
     margin: 0 auto;
-    background: radial-gradient(rgb(170, 202, 255), #3282FF 60%);
+    background: radial-gradient(rgb(170, 202, 255), #3282FF 50%);
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;
 }
@@ -22,8 +22,8 @@ header {
 }
 
 section {
-    text-align: center;
     margin-top: 50px;
+    text-align: center;
 }
 
 table {
@@ -47,10 +47,7 @@ tbody {
 
 th {
     background-color: #E5EEFB;
-}
-
-tr:nth-child(even) {
-    background-color: #F1F6FC;
+    cursor: pointer;
 }
 
 th, td {
@@ -59,16 +56,20 @@ th, td {
 }
 
 th:last-of-type, td:last-of-type {
-    border-right: 0;
+    border-right: none;
 }
 
-td:nth-child(odd),
-th:nth-child(odd){
-  font-weight: bold;
+th:nth-child(odd),
+td:nth-child(odd) {
+    font-weight: bold;
 }
 
 td:nth-child(5) {
     text-transform: lowercase;
+}
+
+tr:nth-child(even) {
+    background-color: #F1F6FC;
 }
 
 .fas {
@@ -78,51 +79,46 @@ td:nth-child(5) {
     color: #929FB7;
 }
 
-.ascending .fa-sort,
-.descending .fa-sort {
+.fa-sort-up,
+.fa-sort-down {
+    display: none;
+    color: #577198;
+}
+
+.sorted-asc .fa-sort,
+.sorted-desc .fa-sort {
     display: none;
 }
+
+.sorted-asc .fa-sort-up,
+.sorted-desc .fa-sort-down {
+    display: inline-block;
+}
+
+.pagi-btns {
+    margin-top: 40px;
+}
+
+ a:link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a:active {
+    color: #fff;
+} 
 
 .disabled {
     pointer-events: none;
-    color: #5A709C;
-}
-
-.paginate.disabled {
-    color: #5A709C;
-}
-
-.fa-sort-down {
-    display: none;
-}
-
-.descending .fa-sort-down {
-    display: inline-block;
-    color: #577198;
-}
-
-.fa-sort-up {
-    display: none;
-}
-
-.ascending .fa-sort-up {
-    display: inline-block;
-    color: #577198;
-}
-
-.pagi-btns a {
-    color: #5A709C;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.pagi-btns a:link {
-    color: #fff;
-}
-
-.pagi-btns a:visited {
-    color: #fff;
 }
 
 footer {
